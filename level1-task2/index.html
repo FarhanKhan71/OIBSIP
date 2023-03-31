@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="My project.png" alt="" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headerText">
+                <p>UI/Frontend Developer</p>
+                <h1>Hi, I'm <span>Farhan</span><br> Khan From India</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="fig.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        My aspiration to live creativity and meet people’s actual needs when it comes to frontend development led me to complete my Bachelor’s in Computer Science and Engineering. My aim is always to combine a pragmatic approach with aesthetics, while improving communication between people. <br>
+                        As a scholar, I am pursuing my studies with an B.Tech at GITA Autonomous College, which ultimately helped me to get my foot into the world of development. As a believer in sustainable practices, my thesis focused on developing the brand identity and communication of a clean website.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Website Protfolio</span><br>using HTML, CSS and JS</li>
+                            <li><span>Movie Review Website</span><br>using HTML, CSS and JS</li>
+                            <li><span>Ecommerce Website</span><br>using HTML, CSS and JS</li>
+                            <li><span>Python Project</span><br>using Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Currently</span><br>B.Tech from Computer Science and Engineering at GITA Autonomous College</li>
+                            <li><span>2020</span><br>12th from S.N.S.R.K.S College</li>
+                            <li><span>2017</span><br>10th from Kendriya Vidyalaya</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, alias?</p>
+                </div>
+                <div>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, alias?</p>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, alias?</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="farhan.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="farhan.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="farhan.jpg" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world. Download it from play store.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>farhankhan893586@gmail.com</p>
+                    <p>8935863340</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/farhan-khan-36008b255"><i class="fa-brands fa-linkedin"></i></a></li></a>
+                        <a href="https://instagram.com/beingfarhan_khan?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a></li></a>
+                    </div>
+                    <a href="file:///C:/Users/fk464/AppData/Local/Microsoft/Windows/INetCache/IE/4HHQNVS1/Black_and_White_Minimalistic_Simple_Resume[1].pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" id="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tablink of tabcontents){
+                tablink.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "farhankhan893586@gmail.com",
+                Password : "Farhan@893586",
+                To: 'farhankhan893586@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Message: " + document.getElementById("message").value
+            }).then(
+                message => alert("Message sent successfully")
+            );
+        }
+    </script>
+</body>
+</html>
